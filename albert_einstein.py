@@ -92,5 +92,5 @@ if user_prompt:
             clean_text = clean_text.replace('"', '\\"').replace("'", "'")
             os.system(f"say -v Evan \"{clean_text}\" &")
             
-        ai_message = HumanMessage(content=reply_text)
-        st.session_state.messages.append(ai_message
+    ai_message = AIMessage(content=reply_text)
+        st.session_state.messages.append(ai_message)    
